@@ -1,0 +1,18 @@
+{
+	"section" : "utils",
+	"priority" : "optional",
+	"maintainer" : {
+		"name" : "Zeke Marffy",
+		"email" : "zmarffy@yahoo.com"
+	},
+	"depends": [
+		"python3"
+	],
+	"description" : "easily pack and distrubute a PIP package",
+	"build" : {
+		"files" : {
+			"ezpypir.sh" : "/usr/bin/ezpypir"
+		}
+	},
+	"architecture_all" : true
+}

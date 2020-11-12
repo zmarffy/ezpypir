@@ -1,6 +1,6 @@
-# `ezpypyr`
+# `ezpypir`
 
-`ezpypyr` is an easy PyPI releaser tool, best used in conjunction with `bumpversion`.
+`ezpypir` is an easy PyPI releaser tool, best used in conjunction with `bumpversion`.
 
 ## Usage
 
@@ -9,7 +9,7 @@ Switch to the project directory.
 If you have `bumpversion` installed, `ezpypr` is used like this.
 
 ```shell
-ezpypyr [release_type]
+ezpypir [release_type]
 ```
 
 It will bump the version, build the package, and then post the resulting builds to PyPI.
@@ -17,7 +17,7 @@ It will bump the version, build the package, and then post the resulting builds 
 If you don't have `bumpversion`, it is used like this.
 
 ```shell
-ezpypyr [version]
+ezpypir [version]
 ```
 
 It will build the package and then post the resulting builds to PyPI. Make sure the version is correct, as that is what it uses to find the built files.

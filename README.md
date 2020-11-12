@@ -24,4 +24,4 @@ It will build the package and then post the resulting builds to PyPI. Make sure 
 
 ## Notes
 
-- Yes, this relies on your `bumpversion` config file to be already set. No, there is no way to **not** use `bumpversion` if it is installed. I do not have plans to make it **not** like that any time soon. I may change my mind though
+- Yes, this relies on your `bumpversion` config file already being set. No, there is no way to **not** use `bumpversion` if it is installed. I do not have plans to make it **not** like that any time soon. I may change my mind though

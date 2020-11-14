@@ -10,7 +10,7 @@ pipPackageInstalled "bumpversion"
 if [ $? -eq 0 ]; then
     if [[ ! -z "$1" ]]; then
         newVersion=$(bumpversion --list $1 | grep new_version | sed -r s,"^.*=",,)
-        if [[ -z "$newversion" ]]; then
+        if [[ -z "$newVersion" ]]; then
             exit 1
         fi
     else

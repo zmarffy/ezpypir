@@ -16,11 +16,13 @@ git push
 # Push GitHub tags
 git push --tags
 
-# Create GitHub release
-gh release create ${newVersion} dist/*${newVersion}*
-
-# Build and upload
+# Build
 python3 setup.py sdist bdist_wheel || exit 1
+
+# Create GitHub release
+gh release create ${newVersion} dist/*${newVersion}* || exit 1
+
+# Upload
 twine upload dist/*${newVersion}* || exit 1
 
 # If not yet installed locally, do so
